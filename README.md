@@ -37,11 +37,9 @@ We can calculate the reversal potential of an ion using the Nernst Equation.
 where [X] refers to the concentration of ion X either inside or outside the neuron and z refers to the valence of ion X (+1 for potassium or sodium, -1 for chloride).
 
 <br>
-
-R is the gas constant, 8.314 J/(K * mol)
-T is the temperature in Kelvins (K)
-F is Faraday's constant, 96485.3 Coulombs (C) / mol
-
+*R is the gas constant, 8.314 J/(K * mol)
+*T is the temperature in Kelvins (K)
+*F is Faraday's constant, 96485.3 Coulombs (C) / mol
 <br>
 
 Let's create a Python function that can calculate the reversal potential of an ion, given its intracellular and extracellular concentrations and its valence.
@@ -83,17 +81,19 @@ Checking our units, it seems that our reversal potential will be calculated in u
 
 Note: we can use the `math` library in Python to calculate the natural log, `ln`. The command we will use is `math.log()`; by default, the `log` method of math uses `e` as its base.
 
-{% spoiler "See Code" %}
+<br>
+<br>
 
-```
+<details>
+<summary>Spoiler "See Code"</summary>
+<pre>
 def nernst(valence, conc_in, conc_out)
-    rev_pot = # plug in the nernst equation here
-    
-    return rev_pot
-    
-```
-{% endspoiler %}
+    rev_pot = # plug in the nernst equation here<br>
+    return rev_pot   
+</pre>
+</details>
 
+<br>
 <br>
 
 Now, let's add code that calls our function. We will need to place this section of code below our `nernst` function. We will need to un-indent the code as well, so that it is not part of our `nernst` function.
@@ -102,9 +102,16 @@ Let's call the function using data that represents potassium: a valence of 1, an
 
 Since the function should return a value, let's assign the output of the function (the function call will evaluate to this output) to a new variable. Next, print the new variable so we can see what our function calculates for the reversal potential.
 
-{% spoiler "Hint" %}
+<br>
+<br>
+
+<details>
+<summary>Spoiler "See Hint"</summary>
 To call a function in python, type the name of the function with open and close parenthesis (). Some functions, like our `nernst` function, expect to receive arguments in the parenthesis. We must put all three of our arguments in the function, in the same order as our function definition, and separate them with commas.
-{% endspoiler %}
+</details>
+
+<br>
+<br>
 
 Now let's run the code and test it. To execute the code file, enter in the terminal window: `python nernst.py`.
 
@@ -119,12 +126,19 @@ After confirming that the equation is calculating correctly, let's update our co
 Use `input` function calls with appropriate prompts to set the values for the valence, and the internal and external concentration arguments that are passed to the `nernst` function.
 
 Make sure to convert the values assigned from the `input()` call to integers before passing them to the `nernst` function.
-{% spoiler "Hint" %}
 
-```
-my_integer = int(input("Enter an integer: "))
-```
-{% endspoiler %}
+<br>
+<br>
+
+<details>
+<summary>Spoiler "See Hint"</summary>
+<pre>
+my_integer = int(input("Enter an integer: ")) 
+</pre>
+</details>
+
+<br>
+<br>
 
 You can now test your code against our auto-checker by executing the command below in the terminal:
 
