@@ -36,13 +36,13 @@ We can calculate the reversal potential of an ion using the Nernst Equation.
 
 where [X] refers to the concentration of ion X either inside or outside the neuron and z refers to the valence of ion X (+1 for potassium or sodium, -1 for chloride).
 
-{% spoiler "Parameters" %}
+<br>
 
-* R is the gas constant, 8.314 J/(K * mol)
-* T is the temperature in Kelvins (K)
-* F is Faraday's constant, 96485.3 Coulombs (C) / mol
+R is the gas constant, 8.314 J/(K * mol)
+T is the temperature in Kelvins (K)
+F is Faraday's constant, 96485.3 Coulombs (C) / mol
 
-{% endspoiler %}
+<br>
 
 Let's create a Python function that can calculate the reversal potential of an ion, given its intracellular and extracellular concentrations and its valence.
 
@@ -61,18 +61,20 @@ First, we'll define a function called `nernst` that takes in three arguments:
 
 This function should return a variable calculated inside the function.
 
-{% spoiler "See Code" %}
+<br>
+<br>
 
-```
+<details>
+<summary>Spoiler "See Code"</summary>
+<pre>
 def nernst(valence, conc_in, conc_out):
     rev_pot = 0
-    
+    <br>
     return rev_pot
-    
-```
+</pre>
+</details>
 
-{% endspoiler %}
-
+<br>
 <br>
 
 Now, let's add the body of the `nernst` function. In the function, write code to calculate the reversal potential of an ion using the Nernst equation and the information passed as arguments to the function.
