@@ -50,7 +50,7 @@ Let's create a Python function that can calculate the reversal potential of an i
 
 Open nernst.py to begin. 
 
-**Note:** it may be easier to work inside the regular CS50 code website instead of this sandbox. To do so, copy the contents of nernst.py and paste into a new nernst.py file within https://code.cs50.io .
+**Note:** you may work in a file called nernst.py within https://code.cs50.io or on your own IDE.
 
 First, we'll define a function called `nernst` that takes in three arguments:
 * the valence of the ion
